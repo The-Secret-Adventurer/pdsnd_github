@@ -1,3 +1,4 @@
+#Imports
 import time
 import pandas as pd
 import numpy as np
@@ -17,7 +18,7 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     
-    # Gget user input for city (chicago, new york city, washington).
+    # Get user input for city (chicago, new york city, washington).
     city = input('Please enter the city (chicago, new york city, washington): ').lower()
     while city not in CITY_DATA.keys():
         city = input('{} isn\'t on the list. Make sure you type the city exactly as shown above: '.format(city)).lower()
