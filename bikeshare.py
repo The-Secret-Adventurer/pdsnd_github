@@ -168,11 +168,10 @@ def user_stats(df):
     
     # Display earliest, most recent, and most common year of birth
     try:        
-        earliest_birth = df['Birth Year'].min().astype(int)
-        most_recent_birth = df['Birth Year'].max().astype(int)
-        most_common_birth = df['Birth Year'].mode().astype(int)
-        print(most_common_birth)    
-        print('\nThe earliest year of birth is {}. The most recent year of birth is {}. The most common year of birth is {}.'.format(earliest_birth, most_recent_birth, most_common_birth))
+        earliest = df['Birth Year'].min().astype(int)
+        most_recent = df['Birth Year'].max().astype(int)
+        most_common = df['Birth Year'].mode().astype(int)
+        print('\nThe earliest year of birth is {}. The most recent year of birth is {}. The most common year of birth is {}.'.format(earliest, most_recent, most_common))
     except KeyError:
         print('No birth year data available')
     
