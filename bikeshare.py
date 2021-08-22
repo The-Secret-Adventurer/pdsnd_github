@@ -25,15 +25,15 @@ def get_filters():
     print('Got it: {}'.format(city))
         
     # Get user input for month (january, february, ... , june, all)
-    month = input('Now enter the month in full (eg january), or enter "all" to apply no day filter: ').lower()
+    month = input('Now pick a month(january-june), or enter "all" to apply no day filter: ').lower()
     while month not in ['january', 'february', 'march' 'april', 'may', 'june', 'all']:
-        month = input('Please try again. Make sure you type the month carefully using only letters: ').lower()
+        month = input('Please try again. Please type the month carefully using only letters: ').lower()
     print('Okay, month is: {}'.format(month))
     
     # Get user input for day of week (monday, tuesday, ... sunday, all)
-    day = input('Finally, enter the day of the week in full (eg monday) or "all" : ').lower()
+    day = input('Finally, pick a day (eg monday) or "all" : ').lower()
     while day not in ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all']:
-        day = input('Please try again. We need the full day name as per the example or type "all" for all days: ').lower()
+        day = input('I\'m not sure that\'s a day. Make sure you type it in full: ').lower()
     print('Day is: {}'.format(day))
     
     
