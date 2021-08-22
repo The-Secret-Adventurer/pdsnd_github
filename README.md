@@ -9,7 +9,7 @@ Bikeshare Project
 Provides filterable statistics on bikeshare usage in Chigago, New York City, and Washington
 
 ### Files used
-## These contain data on bikeshare usage in the three cities
+These contain data on bikeshare usage in the three cities
 chigago.csv
 new_york_city.csv
 washington.csv
